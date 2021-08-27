@@ -65,7 +65,7 @@ seq 2 3 20 | 2041 speed -n '/^1/p'
 * substitue regex are not always delimited with slash / characters. whatever the delimiter is, it will not appear in regexes.
 
 ### s - substitute command
-any non-whitespace character may be used to delimit a substitute command
+any non-whitespace character may be used to delimit a substitute command  
 example:  
 seq 1 5 | 2041 speed 's?[15]?zzz?'  
 zzz  
@@ -74,7 +74,7 @@ zzz
 4  
 
 ### multiple command
-multiple Speed commands can be supplied separated by semicolons ; or newlines
+multiple Speed commands can be supplied separated by semicolons ; or newlines  
 example:  
 seq 1 20 | 2041 speed '/2$/,/8$/d;4,6p'  
 1  
