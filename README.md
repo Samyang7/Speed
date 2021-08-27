@@ -88,5 +88,5 @@ seq 1 20 | ./speed.pl '/2$/,/8$/d;4,6p'
 Perl
 
 # How to use
-clone the speed.pl to the local computer and use as filter terminal command 
+clone the speed.pl to the local computer and use as filter terminal command like example
 
