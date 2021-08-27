@@ -49,19 +49,6 @@ zzz
 3  
 4  
 zzz  
-seq 100 111 | 2041 speed '/1.1/s/1/-/g'  
-100  
--0-  
-102  
-103  
-104  
-105  
-106  
-107  
-108  
-109  
-110  
----  
 
 ### -n command line option
 The Speed -n command line option stops input lines being printed by default. -n command line option is the only useful in conjunction with the p command.  
@@ -79,9 +66,23 @@ seq 2 3 20 | 2041 speed -n '/^1/p'
 
 ### s - substitute command
 any non-whitespace character may be used to delimit a substitute command
+example:  
+seq 1 5 | 2041 speed 's?[15]?zzz?'  
+zzz  
+2  
+3  
+4  
 
 ### multiple command
 multiple Speed commands can be supplied separated by semicolons ; or newlines
+example:  
+seq 1 20 | 2041 speed '/2$/,/8$/d;4,6p'  
+1  
+9  
+10  
+11  
+19  
+20  
 
 # Language
 Perl
