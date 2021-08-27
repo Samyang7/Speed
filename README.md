@@ -10,8 +10,8 @@
 
 ### q - quit command
 The Speed q command causes speed.pl to exit
-
-seq 500 600 | 2041 speed '/^.+5$/q'  
+example:  
+seq 500 600 | ./speed.pl '/^.+5$/q'  
 500  
 501  
 502  
@@ -21,6 +21,14 @@ seq 500 600 | 2041 speed '/^.+5$/q'
 
 ### p - print command
 The Speed p commands prints the input line
+example:  
+seq 7 11 | 2041 speed '4p'
+7  
+8  
+9  
+10  
+10  
+11  
 
 ### d - delete command
 The Speed d commands deletes the input line
