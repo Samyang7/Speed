@@ -6,6 +6,10 @@ speel.pl will be given a single Speed command as a command-line argument. The Sp
 
 ### q - quit command
 The Speed q command causes speed.pl to exit
+<img width="216" alt="Screen Shot 2021-08-27 at 12 07 44" src="https://user-images.githubusercontent.com/58925650/131060593-7a85ff82-f0fc-4204-b2ad-a2869e3deb13.png">
+<img width="261" alt="Screen Shot 2021-08-27 at 12 08 11" src="https://user-images.githubusercontent.com/58925650/131060625-1cd3740c-4eae-46e9-b1c9-43e4d5e3e4eb.png">
+
+
 
 ### p - print command
 The Speed p commands prints the input line
