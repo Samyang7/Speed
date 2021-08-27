@@ -28,3 +28,10 @@ The Speed -n command line option stops input lines being printed by default. -n 
 * In additional to the previous requirement, $ can be used as an address. 
 * Speed commands can optionally be preceded by a comma separated pair of address specifying the start and finish of the range of lines the command applies to. 
 * substitue regex are not always delimited with slash / characters. whatever the delimiter is, it will not appear in regexes.
+
+### s - substitute command
+any non-whitespace character may be used to delimit a substitute command
+
+### multiple command
+multiple Speed commands can be supplied separated by semicolons ; or newlines
+
