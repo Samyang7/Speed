@@ -11,6 +11,14 @@
 ### q - quit command
 The Speed q command causes speed.pl to exit
 
+seq 500 600 | 2041 speed '/^.+5$/q'  
+500  
+501  
+502  
+503  
+504  
+505  
+
 ### p - print command
 The Speed p commands prints the input line
 
@@ -34,4 +42,10 @@ any non-whitespace character may be used to delimit a substitute command
 
 ### multiple command
 multiple Speed commands can be supplied separated by semicolons ; or newlines
+
+# Language
+Perl
+
+# How to use
+clone the speed.pl to the local computer and use as filter terminal command 
 
