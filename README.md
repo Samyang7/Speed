@@ -9,7 +9,7 @@
 * Speed command can optionally be preceded by an address specifying the line(s) they apply to. This address can either be line number or a regex. line number is a positive number and regex is delimited with slash / characters
 
 ### q - quit command
-The Speed q command causes speed.pl to exit
+The Speed q command causes speed.pl to exit  
 example:  
 seq 500 600 | ./speed.pl '/^.+5$/q'  
 500  
@@ -20,7 +20,7 @@ seq 500 600 | ./speed.pl '/^.+5$/q'
 505  
 
 ### p - print command
-The Speed p commands prints the input line
+The Speed p commands prints the input line  
 example:  
 seq 7 11 | ./speed.pl '4p'
 7  
@@ -31,7 +31,7 @@ seq 7 11 | ./speed.pl '4p'
 11  
 
 ### d - delete command
-The Speed d commands deletes the input line
+The Speed d commands deletes the input line  
 example:  
 seq 11 20 | 2041 speed '/[2468]/d'  
 11  
@@ -41,7 +41,7 @@ seq 11 20 | 2041 speed '/[2468]/d'
 19  
 
 ### s - substitute command
-The Speed s command replaces the specified regex on the input line. The substitute command can followed optionally by the modifier character g
+The Speed s command replaces the specified regex on the input line. The substitute command can followed optionally by the modifier character g  
 example:  
 seq 1 5 | 2041 speed 's/[15]/zzz/'  
 zzz  
@@ -50,8 +50,27 @@ zzz
 4  
 zzz  
 
+seq 100 111 | 2041 speed '/1.1/s/1/-/g'  
+100  
+-0-  
+102  
+103  
+104  
+105  
+106  
+107  
+108  
+109  
+110  
+---  
+
 ### -n command line option
-The Speed -n command line option stops input lines being printed by default. -n command line option is the only useful in conjunction with the p command.
+The Speed -n command line option stops input lines being printed by default. -n command line option is the only useful in conjunction with the p command.  
+example:  
+seq 2 3 20 | 2041 speed -n '/^1/p'  
+11  
+14  
+17  
 
 # Supported Command 2
 ## requirement
