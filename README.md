@@ -33,7 +33,7 @@ seq 7 11 | ./speed.pl '4p'
 ### d - delete command
 The Speed d commands deletes the input line  
 example:  
-seq 11 20 | 2041 speed '/[2468]/d'  
+seq 11 20 | ./speed.pl '/[2468]/d'  
 11  
 13  
 15  
@@ -43,7 +43,7 @@ seq 11 20 | 2041 speed '/[2468]/d'
 ### s - substitute command
 The Speed s command replaces the specified regex on the input line. The substitute command can followed optionally by the modifier character g  
 example:  
-seq 1 5 | 2041 speed 's/[15]/zzz/'  
+seq 1 5 | ./speed.pl 's/[15]/zzz/'  
 zzz  
 2  
 3  
@@ -53,7 +53,7 @@ zzz
 ### -n command line option
 The Speed -n command line option stops input lines being printed by default. -n command line option is the only useful in conjunction with the p command.  
 example:  
-seq 2 3 20 | 2041 speed -n '/^1/p'  
+seq 2 3 20 | ./speed.pl -n '/^1/p'  
 11  
 14  
 17  
@@ -67,7 +67,7 @@ seq 2 3 20 | 2041 speed -n '/^1/p'
 ### s - substitute command
 any non-whitespace character may be used to delimit a substitute command  
 example:  
-seq 1 5 | 2041 speed 's?[15]?zzz?'  
+seq 1 5 | ./speed.pl 's?[15]?zzz?'  
 zzz  
 2  
 3  
@@ -76,7 +76,7 @@ zzz
 ### multiple command
 multiple Speed commands can be supplied separated by semicolons ; or newlines  
 example:  
-seq 1 20 | 2041 speed '/2$/,/8$/d;4,6p'  
+seq 1 20 | ./speed.pl '/2$/,/8$/d;4,6p'  
 1  
 9  
 10  
